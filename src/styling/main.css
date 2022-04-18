@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* Variables */
+/* Resume */
+/* Contact Me */
+/* Other Colors used */
+/* Navbar */
+/* Navbar Mobile */
+/* Body */
+/* Homepage */
+/* Resume */
+/* Project Gallery */
+/* Contact Me */
+/* Footer */
+/* Alert */
 /* Misc */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -354,18 +367,6 @@ template {
   display: none;
 }
 
-/* Resume */
-/* Contact Me */
-/* Other Colors used */
-/* Navbar */
-/* Navbar Mobile */
-/* Body */
-/* Homepage */
-/* Resume */
-/* Project Gallery */
-/* Contact Me */
-/* Footer */
-/* Alert */
 /* Oswald */
 @font-face {
   font-family: oswald;

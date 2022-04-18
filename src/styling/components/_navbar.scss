@@ -7,7 +7,7 @@ nav {
     top: 0;
     z-index: 15;
     box-shadow: 0 0 .1rem .2rem #0000007f;
-    height: 4rem;
+    height: $navbar-height;
 }
 #nav-name {
     font-size: 2rem;
