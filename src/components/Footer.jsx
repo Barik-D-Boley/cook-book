@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /* Icons */
 import { BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
