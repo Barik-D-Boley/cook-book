@@ -1,0 +1,19 @@
+/* Misc */
+@import "./base/normalize";
+@import "./colors";
+@import "./fonts/fonts";
+@import "./base/allPages";
+
+/* Components */
+@import "./components/errorPage";
+@import "./components/footer";
+@import "./components/loadingPage";
+@import "./components/navbar";
+@import "./components/alert";
+
+/* Pages */
+@import "./pages/empty";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/homepage";
+@import "./pages/recipes";

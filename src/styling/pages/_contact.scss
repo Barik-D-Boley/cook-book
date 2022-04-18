@@ -1,0 +1,67 @@
+#contact-container-div {
+    flex-direction: column;
+    padding: 2rem 8vw;
+    height: 27rem;
+    width: 70%;
+    margin: 0 auto;
+    h5 {
+        position: relative;
+        top: 1rem;
+        font-size: 2.5rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+#email-label {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+.email-input {
+    width: 100%;
+    min-height: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+}
+#email-content {
+    height: 10rem;
+    resize: none;
+    border: 1px solid $title;
+    border-radius: .5rem;
+    margin-top: .6rem;
+    padding: .3rem;
+}
+#submit-btn {
+    width: auto;
+    color: $content-div-background;
+    padding: .3rem 1rem;
+    background-color: $submit-btn;
+    bottom: 0;
+    left: 0;
+    border: none;
+    border-radius: .4rem;
+    margin-top: .5rem;
+    position: relative;
+    transition: bottom 0.3s, left 0.3s, ease 0.3s;
+    &:hover {
+        cursor: pointer;
+        bottom: .3rem;
+        left: .3rem;
+        box-shadow: -.3rem .3rem $title;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #contact-container-div {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-height: 770px) {
+    #contactPage {
+        .footer {
+            position: relative;
+            margin-top: 3rem;
+        }
+    }
+}

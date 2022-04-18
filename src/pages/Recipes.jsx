@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
+
+/* Components */
 import Welcome from '../components/Welcome';
 import RecipeCards from '../components/RecipeCards';
 import LoadingPage from '../components/LoadingPage';
 import ErrorPage from '../components/ErrorPage';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Recipes() {
     const [isLoading, setIsLoading] = useState(true);
@@ -33,7 +38,12 @@ function Recipes() {
     if (isError === true) return <ErrorPage />
 
     return (
-        <div className='masterContainer'>
+        <div className='recipe-page'>
+            <Helmet>
+                <title>Recipes</title>
+            </Helmet>
+
+            <Navbar />
             <div id='navbarContainer'>
                 <div id='navbar'>
                     <input className='input' id='query' name='query' type='text' placeholder='Chicken' />
@@ -72,9 +82,7 @@ function Recipes() {
             <div id='allRecipes'>
                 {boolean ? <RecipeCards recipes={recipe} website={website} /> : <Welcome />}
             </div>
-            <footer>
-                Designed by Barik Boley | 5902 W Peoria Ave, Glendale, AZ 85302 | <a href="mailto:nowhere@gmail.org?cc=name2@rapidtables.com&bcc=name3@reapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%email" id="contactUs">Contact Us</a> | Copyright &copy; 2021 My Thoughts
-            </footer>
+            <Footer />
         </div>
     )
 }
