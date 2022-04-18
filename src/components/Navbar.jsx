@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(active) {
     return (
         <nav>
             <div id="nav-left">
@@ -9,10 +9,10 @@ function Navbar() {
                 <Link to="/" id="nav-name">Everything Cookbook</Link>
             </div>
             <div id="nav-right">
-                <Link to="/" className={`nav-page-link ${(num === "homepage") ? "nav-active" : "nav-inactive"}`}>Homepage</Link>
-                <Link to="/about" className={`nav-page-link ${(num === "resume") ? "nav-active" : "nav-inactive"}`}>About</Link>
-                <Link to="/recipes" className={`nav-page-link ${(num === "projectGallery") ? "nav-active" : "nav-inactive"}`}>Recipes</Link>
-                <Link to="/contact" className={`nav-page-link ${(num === "contactMe") ? "nav-active" : "nav-inactive"}`}>Contact Me</Link>
+                <Link to="/" className={`nav-page-link ${(active === "homepage") ? "nav-active" : "nav-inactive"}`}>Homepage</Link>
+                <Link to="/about" className={`nav-page-link ${(active === "resume") ? "nav-active" : "nav-inactive"}`}>About</Link>
+                <Link to="/recipes" className={`nav-page-link ${(active === "projectGallery") ? "nav-active" : "nav-inactive"}`}>Recipes</Link>
+                <Link to="/contact" className={`nav-page-link ${(active === "contactMe") ? "nav-active" : "nav-inactive"}`}>Contact Me</Link>
             </div>
             <button id="drop-down-menu">
                 <span className="bar"></span>
