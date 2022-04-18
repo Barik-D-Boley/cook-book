@@ -28,9 +28,9 @@ function Footer() {
                     <div>
                         <ul>
                             <li className="title">Title</li>
-                            <li><a href="#">List Item</a></li>
-                            <li><a href="#">List Item</a></li>
-                            <li><a href="#">List Item</a></li>
+                            <li><a href="/g">List Item</a></li>
+                            <li><a href="/g">List Item</a></li>
+                            <li><a href="/g">List Item</a></li>
                         </ul>
                     </div>
                 </div>
