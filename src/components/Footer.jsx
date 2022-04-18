@@ -19,18 +19,18 @@ function Footer() {
                     <div>
                         <ul>
                             <li className="title">Navigation</li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/recipes">Recipes</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/recipes">Recipes</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
                             <li className="title">Title</li>
-                            <li><a href="/g">List Item</a></li>
-                            <li><a href="/g">List Item</a></li>
-                            <li><a href="/g">List Item</a></li>
+                            <li><Link to="/g">List Item</Link></li>
+                            <li><Link to="/g">List Item</Link></li>
+                            <li><Link to="/g">List Item</Link></li>
                         </ul>
                     </div>
                 </div>

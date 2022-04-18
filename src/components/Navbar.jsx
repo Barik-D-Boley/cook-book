@@ -4,14 +4,14 @@ function Navbar() {
     return (
         <nav>
             <div id="nav-left">
-                <a href="/"><img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo" id="nav-logo" /></a>
-                <a href="/" id="nav-name">Everything Cookbook</a>
+                <Link to="/"><img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo" id="nav-logo" /></Link>
+                <Link to="/" id="nav-name">Everything Cookbook</Link>
             </div>
             <div id="nav-right">
-                <a href="/">Homepage</a>
-                <a href="/about">About</a>
-                <a href="/recipes">Recipes</a>
-                <a href="/contact">Contact</a>
+                <Link to="/" className={`nav-page-link ${(num === "homepage") ? "nav-active" : "nav-inactive"}`}>Homepage</Link>
+                <Link to="/about" className={`nav-page-link ${(num === "resume") ? "nav-active" : "nav-inactive"}`}>About</Link>
+                <Link to="/recipes" className={`nav-page-link ${(num === "projectGallery") ? "nav-active" : "nav-inactive"}`}>Recipes</Link>
+                <Link to="/contact" className={`nav-page-link ${(num === "contactMe") ? "nav-active" : "nav-inactive"}`}>Contact Me</Link>
             </div>
             <button id="drop-down-menu">
                 <span className="bar"></span>
