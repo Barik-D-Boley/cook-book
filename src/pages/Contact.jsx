@@ -74,10 +74,10 @@ function ContactMe() {
                 <div id="contact-container-div" className="container-div">
                     <h5>Get in Touch</h5>
                     <form id="send-email" ref={form} onSubmit={sendEmail}>
-                        <input type="text" id="name-input" className="email-input" placeholder="Your Name:" name="from_name" autocomplete="name" /><hr />
-                        <input type="email" id="email-input" className="email-input" placeholder="Your Email:" name="from_email" autocomplete="email" /><hr />
-                        <input type="text" id="email-subject" className="email-input" placeholder="Subject:" name="subject" autocomplete="off" />
-                        <textarea type="text" id="email-content" className="email-input" placeholder="Dear Barik," name="message" autocomplete="off" />
+                        <input type="text" id="name-input" className="email-input" placeholder="Your Name:" name="from_name" autoComplete="name" /><hr />
+                        <input type="email" id="email-input" className="email-input" placeholder="Your Email:" name="from_email" autoComplete="email" /><hr />
+                        <input type="text" id="email-subject" className="email-input" placeholder="Subject:" name="subject" autoComplete="off" />
+                        <textarea type="text" id="email-content" className="email-input" placeholder="Dear Barik," name="message" autoComplete="off" />
                         <input type="submit" value="Send" id="submit-btn" className="email-input" />
                     </form>
                 </div>

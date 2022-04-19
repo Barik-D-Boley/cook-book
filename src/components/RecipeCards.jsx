@@ -1,44 +1,18 @@
 import React from 'react';
 import RecipeDNE from './RecipeDNE';
-import axios from 'axios';
+import { BiLinkExternal } from "react-icons/bi";
 
-function joinInput(input) {
-    if (input.length === 0) return 'None';
-    else if (input.length === 1) return input;
-    else if (input.length > 1) return input.join(', '); 
-}
+const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
 
 function RecipeCards(recipes) {
     if (recipes.recipes.data.to === 0) return <RecipeDNE />
-    function webSearch(recipeName) {
-        const options = {
-        method: 'GET',
-        url: 'https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI',
-        params: {
-            q: `${recipeName}`,
-            pageNumber: '1',
-            pageSize: '1',
-            autoCorrect: 'false'
-        },
-        headers: {
-            'x-rapidapi-host': 'contextualwebsearch-websearch-v1.p.rapidapi.com',
-            'x-rapidapi-key': '39eb21bbd1msha190384ce6dd237p1d93c8jsn16d5c24c24db'
-        }
-        };
-
-        axios.request(options).then(function (response) {
-            window.open(response.data.value[0].url)
-        })
-        .catch(function (error) {
-            console.error(error);
-        });
-    }
 
     recipes = recipes.recipes.data.hits;
     let stuff = [];
     for (let i = 0; i < recipes.length; i++) {
-        const { image, label, calories, yield: servings, ingredientLines, ingredients, totalTime, cautions } = recipes[i].recipe;
+        let { image, label, calories, yield: servings, ingredientLines, ingredients, totalTime, cautions, url } = recipes[i].recipe;
         let ingredientList = [];
+        calories = Math.round(calories / 10) * 10;
         if (ingredientLines.length > 0) ingredientList = ingredientLines;
         else {
             ingredients.forEach(ing => {
@@ -46,16 +20,17 @@ function RecipeCards(recipes) {
             });
         }
         stuff.push(  
-            <div className='recipeContainer' key={i}>
-                <img className='recipeImg' src={image} alt={label} />
-                <div className='textContainer'>
-                    <h3 className='recipePart'>{label}</h3>
-                    <p className='recipePart'>{Math.round(calories/10)*10} calories</p>
-                    <p className='recipePart'>Makes {servings} servings</p>
-                    <p className='recipePart'>Ingredients: <br />{ingredientList.splice(0, 6).join(', ')}</p>           
-                    <p className='recipePart'>Cook time: {totalTime} minutes</p>
-                    <p className='recipePart'>Cautions: {joinInput(cautions)}</p>
-                    <button className='submitBtn' onClick={() => webSearch(label)}>Recipe Link</button>
+            <div className='recipe-container' key={i}>
+                <img className='recipe-img' src={image} alt={label} />
+                <div className='text-container'>
+                    <h1 className='recipe-part'>{label}</h1>
+                    <p className='recipe-part'>{calories} calories</p>
+                    <p className='recipe-part'>{Math.round(calories / servings)} calories per serving</p>
+                    <p className='recipe-part'>Makes {servings} servings</p>
+                    <p className='recipe-part'>Ingredients: <br />{formatter.format(ingredientList)}</p>           
+                    <p className='recipe-part'>Cook time: {totalTime} minutes</p>
+                    <p className='recipe-part'>Cautions: {(cautions.length === 0) ? 'None' : formatter.format(cautions)}</p>
+                    <a href={url} target="_blank" rel="noreferrer"><BiLinkExternal /></a>
                 </div>
             </div>
         )

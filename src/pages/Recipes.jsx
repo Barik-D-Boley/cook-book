@@ -13,9 +13,8 @@ import Footer from "../components/Footer";
 function Recipes() {
     const [isLoading, setIsLoading] = useState(true);
     const [isError, setIsError] = useState(false);
-    const [recipe, setRecipe] = useState();
-    let website;
     const [boolean, setBoolean] = useState(false);
+    const [recipe, setRecipe] = useState();
 
     useEffect(() => {
         setIsLoading(false);
@@ -42,11 +41,11 @@ function Recipes() {
             <Helmet>
                 <title>Recipes</title>
             </Helmet>
-
             <Navbar />
+
             <div id='navbarContainer'>
                 <div id='navbar'>
-                    <input className='input' id='query' name='query' type='text' placeholder='Chicken' />
+                    <input className='input' id='query' name='query' type='text' placeholder='Search' />
                     <select className='input' id='cuisines' name='cuisines'>
                         <option className='defaultOption' value='empty'>Choose a Cuisine</option>
                         <option className='formOption' value='American'>American</option>
@@ -80,7 +79,7 @@ function Recipes() {
                 </div>
             </div>
             <div id='allRecipes'>
-                {boolean ? <RecipeCards recipes={recipe} website={website} /> : <Welcome />}
+                {boolean ? <RecipeCards recipes={recipe} /> : <Welcome />}
             </div>
             <Footer />
         </div>

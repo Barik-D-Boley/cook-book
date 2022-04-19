@@ -29,8 +29,6 @@ footer {
           text-align: center;
           li {
             padding: 0.1rem;
-            min-width: 48px;
-            min-height: 48px;
             &.title {
               color: $accent-color;
               font-size: 110%;
@@ -48,7 +46,7 @@ footer {
               }
               &:hover,
               &:focus {
-                text-decoration: underline;
+                color: $btn-light;
               }
             }
           }
@@ -76,7 +74,7 @@ footer {
             }
             &:hover,
             &:focus {
-              text-decoration: underline;
+              color: $btn-light;
             }
           }
         }
