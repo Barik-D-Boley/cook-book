@@ -43,7 +43,7 @@ $imgWidth: 7rem;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 1rem;
-    text-transform: capitalize;
+    // text-transform: capitalize;
 }
 .price {
     color: $linkedin-hover;
@@ -58,9 +58,9 @@ $imgWidth: 7rem;
 }
 .desc {
     color: $text-blue;
-    margin-top: 2rem;
     font-size: 1.3rem;
     line-height: 2rem;
+    margin: 0;
     &::first-letter {
         text-transform: capitalize;
     }

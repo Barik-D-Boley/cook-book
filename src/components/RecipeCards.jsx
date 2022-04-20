@@ -12,7 +12,7 @@ function RecipeCards(recipes) {
 
     let stuff = [];
     for (let i = 0; i < recipes.length; i++) {
-        let { image, label, calories, yield: servings, ingredientLines, ingredients, totalTime, cautions, url } = recipes[i].recipe;
+        let { image, label, calories, yield: servings, ingredientLines, ingredients,/*  totalTime, cautions, url  */} = recipes[i].recipe;
         let ingredientList = [];
         calories = Math.round(calories / 10) * 10;
         if (ingredientLines.length > 0) ingredientList = ingredientLines;
@@ -27,11 +27,16 @@ function RecipeCards(recipes) {
                 <div className='textContainer'>
                     <div className='inlineTitle'>
                         <h3 className='title'>{label}</h3>
-                        <h3 className='title price'>{calories} Calories</h3>
+                        {/* <h3 className='title price'>{calories} Calories</h3>
+                        <h3 className='title price'>{servings} Serving{servings === 1 ? "" : "s"}</h3> */}
+                        <h3 className='title price'>{Math.round(calories/servings)} Calories per Serving</h3>
                     </div>
                     <hr className='itemUnderline' />
-                    <p className='desc'>{formatter.format(ingredientList)}</p>
-                    <a href={`/individual`}>More Info</a>
+                    {/* <p className='desc'>{formatter.format(ingredientList)}</p> */}
+                    <p className='desc'>{calories} Calories</p>
+                    <p className='desc'>{servings} Serving{servings === 1 ? "" : "s"}</p>
+
+                    <a href={`/individualRecipe`}>More Info</a>
                 </div>
             </div>
         )
