@@ -1,6 +1,6 @@
 import React from 'react';
 import RecipeDNE from './RecipeDNE';
-import { BiLinkExternal } from "react-icons/bi";
+// import { BiLinkExternal } from "react-icons/bi";
 
 const formatter = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
 
@@ -8,6 +8,8 @@ function RecipeCards(recipes) {
     if (recipes.recipes.data.to === 0) return <RecipeDNE />
 
     recipes = recipes.recipes.data.hits;
+    console.log(recipes);
+
     let stuff = [];
     for (let i = 0; i < recipes.length; i++) {
         let { image, label, calories, yield: servings, ingredientLines, ingredients, totalTime, cautions, url } = recipes[i].recipe;
@@ -19,18 +21,17 @@ function RecipeCards(recipes) {
                 ingredientList.push(ing.text);
             });
         }
-        stuff.push(  
-            <div className='recipe-container' key={i}>
-                <img className='recipe-img' src={image} alt={label} />
-                <div className='text-container'>
-                    <h1 className='recipe-part'>{label}</h1>
-                    <p className='recipe-part'>{calories} calories</p>
-                    <p className='recipe-part'>{Math.round(calories / servings)} calories per serving</p>
-                    <p className='recipe-part'>Makes {servings} servings</p>
-                    <p className='recipe-part'>Ingredients: <br />{formatter.format(ingredientList)}</p>           
-                    <p className='recipe-part'>Cook time: {totalTime} minutes</p>
-                    <p className='recipe-part'>Cautions: {(cautions.length === 0) ? 'None' : formatter.format(cautions)}</p>
-                    <a href={url} target="_blank" rel="noreferrer"><BiLinkExternal /></a>
+        stuff.push(
+            <div className='menuItem' key={i}>
+                <div className='img-container'><img className='image' src={image} alt={label} /></div>
+                <div className='textContainer'>
+                    <div className='inlineTitle'>
+                        <h3 className='title'>{label}</h3>
+                        <h3 className='title price'>{calories} Calories</h3>
+                    </div>
+                    <hr className='itemUnderline' />
+                    <p className='desc'>{formatter.format(ingredientList)}</p>
+                    <a href={`/individual`}>More Info</a>
                 </div>
             </div>
         )

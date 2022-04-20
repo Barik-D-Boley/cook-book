@@ -43,7 +43,7 @@ function ContactMe() {
     }
 
     return (
-        <div id="contactPage">
+        <div id="contact-page">
             <Helmet>
                 <title>Contact Me</title>
             </Helmet>
@@ -69,7 +69,7 @@ function ContactMe() {
             </div>
 
             {/* Page Content */}
-            <Navbar active={"contactMe"} />
+            <Navbar active={"contact"} />
             <div className="website-container-div">
                 <div id="contact-container-div" className="container-div">
                     <h5>Get in Touch</h5>

@@ -368,6 +368,7 @@ template {
 body {
   margin-top: 4rem;
   font-family: oswald;
+  background-color: #f1f5f8;
 }
 
 /* Components */
@@ -375,6 +376,7 @@ footer {
   color: #f9f9f9;
   background-color: #2d3436;
   margin-top: auto;
+  height: 15.2rem;
 }
 footer .row {
   text-align: center;
@@ -643,11 +645,81 @@ nav {
   display: flex;
 }
 
-.recipe-container {
+#menuItems {
   display: flex;
-  width: 95vw;
-  margin: 1rem auto;
-  background-color: #989da6;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+#all-recipes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menuItem {
+  display: inline-flex;
+  width: 90vw;
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+}
+
+.img-container {
+  width: 21rem;
+  height: 14rem;
+}
+
+.image {
+  border: 0.3rem solid #028edb;
+  border-radius: 0.3rem;
+  width: 21rem;
+  height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+}
+
+.textContainer {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.inlineTitle {
+  display: inline-flex;
+  width: 100%;
+}
+
+.title {
+  color: #142a42;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+
+.price {
+  color: #028edb;
+  margin: 0 0 0 auto;
+}
+
+.itemUnderline {
+  margin-top: 1rem;
+  border-top: dotted 3px #142a42;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.desc {
+  color: #6a82b1;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.desc::first-letter {
+  text-transform: capitalize;
 }
 
 /* Pages */
@@ -714,8 +786,11 @@ nav {
   }
 }
 @media screen and (max-height: 770px) {
-  #contactPage .footer {
+  #contact-page .footer {
     position: relative;
     margin-top: 3rem;
   }
+}
+#search {
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

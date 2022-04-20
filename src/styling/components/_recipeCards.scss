@@ -1,6 +1,67 @@
-.recipe-container {
+$imgWidth: 7rem;
+
+#menuItems {
     display: flex;
-    width: 95vw;
-    margin: 1rem auto;
-    background-color: $skills-background;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+#all-recipes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menuItem {
+    display: inline-flex;
+    width: 90vw;
+    margin: 1rem 0;
+    border-radius: $medium-border-radius;
+}
+.img-container {
+    width: $imgWidth * 3;
+    height: $imgWidth * 2;
+}
+.image {
+    border: 0.3rem solid $linkedin-hover;
+    border-radius: 0.3rem;
+    width: $imgWidth * 3;
+    height: $imgWidth * 2;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.textContainer {
+    margin-left: 2rem;
+    width: 100%;
+}
+.inlineTitle {
+    display: inline-flex;
+    width: 100%;
+}
+.title {
+    color: $title-blue;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+.price {
+    color: $linkedin-hover;
+    margin: 0 0 0 auto;
+}
+.itemUnderline {
+    margin-top: 1rem;
+    border-top: dotted 3px $title-blue;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.desc {
+    color: $text-blue;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    &::first-letter {
+        text-transform: capitalize;
+    }
 }

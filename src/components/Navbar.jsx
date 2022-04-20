@@ -10,7 +10,6 @@ function Navbar(active) {
             </div>
             <div id="nav-right">
                 <Link to="/" className={`nav-page-link ${(active === "homepage") ? "nav-active" : "nav-inactive"}`}>Homepage</Link>
-                <Link to="/about" className={`nav-page-link ${(active === "resume") ? "nav-active" : "nav-inactive"}`}>About</Link>
                 <Link to="/recipes" className={`nav-page-link ${(active === "projectGallery") ? "nav-active" : "nav-inactive"}`}>Recipes</Link>
                 <Link to="/contact" className={`nav-page-link ${(active === "contactMe") ? "nav-active" : "nav-inactive"}`}>Contact Me</Link>
             </div>
