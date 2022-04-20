@@ -1,98 +1,93 @@
-$background: #2f3640;
-$text-main: #000000;
-$text-hover: #707070;
-$footer-background: #2d3436;
-$secondary-color: #f7941d;
-$tertiary-color: #ffffff;
+/* White */
+$clr-white-1: #ffffff;
+$clr-white-2: #f9f9f9;
+$clr-white-3: #f1f5f8;
 
-/* Resume */
-$text: #808080;
-$resume-background: #ffffff;
-$skills-background: #989da6;
-$resume-text: #000000;
-$resume-subtitles: #313c4e;
-$experience-subtitle: #606060;
-$resume-descriptions: #7c7c7c;
-$resume-link-hover: #9a9a9a;
-$link: #0000ff;
-$link-hover: #0400d9;
+/* Gray */
+$clr-gray-1: #949494;
+$clr-gray-2: #808080;
+$clr-gray-3: #707070;
+$clr-gray-4: #2d3436;
 
-/* Contact Me */
-$submit-btn: #006dfe;
+/* Black */
+$clr-black-1: #000000;
+$transparent-black-1: #0000005f;
 
-$light-background: #f9f9f9;
-$light-background-translucent: #f5f6faaa;
-$medium-light-background: #d8d8d8;
-$accent-color: #f7941d;
-$dark-background: #2d3436;
+/* Misc */
+$clr-red-1: #ff0000;
+$clr-orange-1: #f7941d;
+$clr-green-1: #008000;
 
-/* Other Colors used */
-$clr-white: #fff;
-$clr-black: #222;
-$font-dark: #2d3436;
-$transparent-dark: #00000066;
-$transparent-darker: #00000099;
-$font-light: $light-background;
-$clr-red-dark: hsl(360, 67%, 44%);
-$clr-red-light: hsl(360, 71%, 66%);
-$clr-green-dark: hsl(125, 67%, 44%);
-$clr-green-light: hsl(125, 71%, 66%);
-$btn-light: #949494;
-$btn-dark: #303030;
+/* Blue */
+$clr-blue-1: #142a42;
+$clr-blue-2: #006dfe;
+$clr-blue-3: #028edb;
+$clr-blue-4: #6a82b1;
 
-/* Navbar */
-$navbar-active: #ffffff;
-$navbar-inactive: #ffffff7f;
-$navbar-hover: #ffffffcf;
 
-/* Navbar Mobile */
-$mob-nav-active: #000000;
-$mob-nav-inactive: #0000007f;
 
-/* Body */
-$title: #000000;
-$subtitle: #ff5349;
-$text-hover: #505050;
-$west-mec: #f8941c;
-$west-mec-hover: #f8741c;
-$content-div-background: #ffffff;
+// $background: #2f3640;
+// $footer-background: #2d3436;
+// $secondary-color: #f7941d;
 
-/* Homepage */
-$phone: #005bd4;
-$email: #DB4437;
-$email-hover: #d40000;
-$linkedin: #0274b3;
-$linkedin-hover: #028edb;
-$github: #000000;
-$github-hover: #424242;
+// $resume-background: #ffffff;
+// $skills-background: #989da6;
+// $resume-text: #000000;
+// $resume-subtitles: #313c4e;
+// $experience-subtitle: #606060;
+// $resume-descriptions: #7c7c7c;
+// $resume-link-hover: #9a9a9a;
+// $link: #0000ff;
+// $link-hover: #0400d9;
 
-/* Resume */
-$resume-background: #ffffff;
-$skills-background: #989da6;
-$resume-text: #000000;
-$resume-subtitles: #313c4e;
-$experience-subtitle: #606060;
-$resume-descriptions: #7c7c7c;
-$resume-link-hover: #9a9a9a;
+// $clr-blue-2: #006dfe;
 
-/* Project Gallery */
-$link: #0000ff;
-$link-hover: #0400d9;
+// $clr-white-2-translucent: #f5f6faaa;
+// $medium-clr-white-2: #d8d8d8;
 
-/* Contact Me */
-$submit-btn: #006dfe;
+// $clr-white: #fff;
+// $clr-black: #222;
+// $font-dark: #2d3436;
+// $transparent-dark: #00000066;
+// $transparent-darker: #00000099;
+// $clr-red-dark: hsl(360, 67%, 44%);
+// $clr-red-light: hsl(360, 71%, 66%);
+// $clr-green-dark: hsl(125, 67%, 44%);
+// $clr-green-light: hsl(125, 71%, 66%);
+// $btn-dark: #303030;
 
-/* Footer */
-$footer-text: #ffffff;
-$footer-text-hover: #bfbfbf;
-$footer-background: #000000;
+// $navbar-active: #ffffff;
+// $navbar-inactive: #ffffff7f;
+// $navbar-hover: #ffffffcf;
 
-/* Alert */
-$alert-background: #0000005f;
-$close-out-hover: #ff0000;
-$success-title: #008000;
+// $mob-nav-active: #000000;
+// $mob-nav-inactive: #0000007f;
 
-$tan: #c59d5f;
-$text-blue: #6a82b1;
-$title-blue: #142a42;
-$clr-white-2: #f1f5f8;
+// $subtitle: #ff5349;
+// $clr-gray-3: #505050;
+// $west-mec: #f8941c;
+// $west-mec-hover: #f8741c;
+
+// $phone: #005bd4;
+// $email: #DB4437;
+// $email-hover: #d40000;
+// $linkedin: #0274b3;
+// $github: #000000;
+// $github-hover: #424242;
+
+// $resume-background: #ffffff;
+// $skills-background: #989da6;
+// $resume-text: #000000;
+// $resume-subtitles: #313c4e;
+// $experience-subtitle: #606060;
+// $resume-descriptions: #7c7c7c;
+// $resume-link-hover: #9a9a9a;
+
+// $link: #0000ff;
+// $link-hover: #0400d9;
+
+// $footer-text: #ffffff;
+// $footer-text-hover: #bfbfbf;
+// $footer-background: #000000;
+
+// $tan: #c59d5f;

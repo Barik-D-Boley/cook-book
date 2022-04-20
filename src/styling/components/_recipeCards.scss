@@ -22,12 +22,15 @@ $imgWidth: 7rem;
     height: $imgWidth * 2;
 }
 .image {
-    border: 0.3rem solid $linkedin-hover;
+    border: 0.3rem solid $clr-blue-3;
     border-radius: 0.3rem;
     width: $imgWidth * 3;
     height: $imgWidth * 2;
     object-fit: cover;
     box-sizing: border-box;
+}
+.short-text {
+    font-size: 1.5rem;
 }
 .textContainer {
     margin-left: 2rem;
@@ -38,27 +41,25 @@ $imgWidth: 7rem;
     width: 100%;
 }
 .title {
-    color: $title-blue;
-    font-size: 1.3rem;
+    color: $clr-blue-1;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 1rem;
     // text-transform: capitalize;
 }
 .price {
-    color: $linkedin-hover;
+    color: $clr-blue-3;
     margin: 0 0 0 auto;
 }
 .itemUnderline {
     margin-top: 1rem;
-    border-top: dotted 3px $title-blue;
+    border-top: dotted 3px $clr-blue-1;
     border-right: 0;
     border-bottom: 0;
     border-left: 0;
 }
 .desc {
-    color: $text-blue;
-    font-size: 1.3rem;
+    color: $clr-blue-4;
     line-height: 2rem;
     margin: 0;
     &::first-letter {

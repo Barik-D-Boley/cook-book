@@ -10,12 +10,12 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: $alert-background;
+    background: $transparent-black-1;
     z-index: 10;
 }
 .alert-info {
     display: flex;
-    background-color: $content-div-background;
+    background-color: $clr-white-1;
     width: 20rem;
     height: 15vh;
     border-radius: .5rem;
@@ -32,12 +32,12 @@
     margin:  .7rem .7rem 0 0;
 }
 .close-out {
-    color: $text;
+    color: $clr-gray-2;
     font-size: 2rem;
     border-radius: .2rem;
     transition: color .1s ease;
     &:hover {
-        color: $close-out-hover;
+        color: $clr-red-1;
         cursor: pointer;
     }
 }
@@ -46,7 +46,7 @@
     flex-direction: column;
     margin: auto 0;
     h1 {
-        color: $success-title;
+        color: $clr-green-1;
         text-align: center;
         font-size: 2.5rem;
     }
@@ -56,7 +56,7 @@
     flex-direction: column;
     margin: auto 0;
     h1 {
-        color: $close-out-hover;
+        color: $clr-red-1;
         text-align: center;
         font-size: 2.5rem;
     }

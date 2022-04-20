@@ -1,6 +1,6 @@
 footer {
-  color: $font-light;
-  background-color: $dark-background;
+  color: $clr-white-2;
+  background-color: $clr-gray-4;
   margin-top: auto;
   height: $footer-height;
   .row {
@@ -12,7 +12,7 @@ footer {
       flex-direction: row;
       justify-content: space-around;
       align-items: space-around;
-      color: $font-light;
+      color: $clr-white-2;
       padding-top: 1rem;
       .col {
         display: flex;
@@ -31,23 +31,23 @@ footer {
           li {
             padding: 0.1rem;
             &.title {
-              color: $accent-color;
+              color: $clr-orange-1;
               font-size: 110%;
               font-weight: bold;
               padding: 0.5rem;
               padding-left: 0;
             }
             a {
-              color: $font-light;
+              color: $clr-white-2;
               min-width: 48px;
               min-height: 48px;
               text-decoration: none;
               &:active {
-                color: $accent-color;
+                color: $clr-orange-1;
               }
               &:hover,
               &:focus {
-                color: $btn-light;
+                color: $clr-gray-1;
               }
             }
           }
@@ -69,13 +69,13 @@ footer {
           justify-content: center;
           margin-inline: 1rem;
           a {
-            color: $font-light;
+            color: $clr-white-2;
             &:active {
-              color: $accent-color;
+              color: $clr-orange-1;
             }
             &:hover,
             &:focus {
-              color: $btn-light;
+              color: $clr-gray-1;
             }
           }
         }

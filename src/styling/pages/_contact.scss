@@ -26,16 +26,16 @@
 #email-content {
     height: 10rem;
     resize: none;
-    border: 1px solid $title;
+    border: 1px solid $clr-black-1;
     border-radius: .5rem;
     margin-top: .6rem;
     padding: .3rem;
 }
 #submit-btn {
     width: auto;
-    color: $content-div-background;
+    color: $clr-white-1;
     padding: .3rem 1rem;
-    background-color: $submit-btn;
+    background-color: $clr-blue-2;
     bottom: 0;
     left: 0;
     border: none;
@@ -47,7 +47,7 @@
         cursor: pointer;
         bottom: .3rem;
         left: .3rem;
-        box-shadow: -.3rem .3rem $title;
+        box-shadow: -.3rem .3rem $clr-black-1;
     }
 }
 

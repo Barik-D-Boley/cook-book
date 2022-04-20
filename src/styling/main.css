@@ -1,16 +1,9 @@
 /* Variables */
-/* Resume */
-/* Contact Me */
-/* Other Colors used */
-/* Navbar */
-/* Navbar Mobile */
-/* Body */
-/* Homepage */
-/* Resume */
-/* Project Gallery */
-/* Contact Me */
-/* Footer */
-/* Alert */
+/* White */
+/* Gray */
+/* Black */
+/* Misc */
+/* Blue */
 /* Misc */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -571,7 +564,7 @@ nav {
 }
 
 #nav-name:hover {
-  color: #505050;
+  color: #707070;
 }
 
 #nav-left {
@@ -607,7 +600,7 @@ nav {
 }
 
 #nav-right a:hover {
-  color: #505050;
+  color: #707070;
 }
 
 #nav-logo {
@@ -812,6 +805,10 @@ nav {
           box-sizing: border-box;
 }
 
+.short-text {
+  font-size: 1.5rem;
+}
+
 .textContainer {
   margin-left: 2rem;
   width: 100%;
@@ -826,7 +823,6 @@ nav {
 
 .title {
   color: #142a42;
-  font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 1rem;
@@ -847,7 +843,6 @@ nav {
 
 .desc {
   color: #6a82b1;
-  font-size: 1.3rem;
   line-height: 2rem;
   margin: 0;
 }

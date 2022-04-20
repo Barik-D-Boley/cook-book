@@ -1,5 +1,5 @@
 nav {
-    background-color: $tertiary-color;
+    background-color: $clr-white-1;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -11,11 +11,11 @@ nav {
 }
 #nav-name {
     font-size: 2rem;
-    color: $text-main;
+    color: $clr-black-1;
     text-decoration: none;
     transition: color 0.2s ease;
     &:hover {
-        color: $text-hover;
+        color: $clr-gray-3;
     }
 }
 #nav-left {
@@ -30,11 +30,11 @@ nav {
     a {
         margin: 0 .3rem;
         font-size: 1.2rem;
-        color: $text-main;
+        color: $clr-black-1;
         text-decoration: none;
         transition: color 0.2s ease;
         &:hover {
-            color: $text-hover;
+            color: $clr-gray-3;
         }
     }
 }
@@ -48,7 +48,7 @@ nav {
 .bar {
     height: .3rem;
     width: 100%;
-    background-color: $text-main;
+    background-color: $clr-black-1;
     border-radius: .5rem;
 }
 .dropped-menu {
