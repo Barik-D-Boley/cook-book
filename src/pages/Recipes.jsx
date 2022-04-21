@@ -35,9 +35,7 @@ function Recipes() {
                 <input className="input" id="query" name="query" type="text" placeholder="Search" />
                 <input className="input submitBtn" type="submit" value="Submit" />
             </form>
-            <div id="all-recipes">
-                {boolean ? <RecipeCards recipes={recipe} /> : <Welcome />}
-            </div>
+            {boolean ? <RecipeCards recipes={recipe} /> : <Welcome />}
 
             <Footer />
         </div>

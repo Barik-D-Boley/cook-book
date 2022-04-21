@@ -44,7 +44,7 @@ function Footer() {
                         <li><a href="https://twitter.com/JohnMurderous" target="_blank" rel="noreferrer"><BsTwitter /></a></li>
                     </ul>
                 </div>
-                <p>Everything Cookbook © 2022</p>
+                <p>Everything Cookbook™ 2022</p>
             </div>
         </footer>
     )

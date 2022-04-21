@@ -5,8 +5,8 @@ function Navbar(active) {
     return (
         <nav>
             <div id="nav-left">
-                <Link to="/"><img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="Logo" id="nav-logo" /></Link>
-                <Link to="/" id="nav-name">Everything Cookbook</Link>
+                <Link to="/"><img src="https://clipart.world/wp-content/uploads/2020/08/white-chef-hat-png-transparent.png" alt="Logo" id="nav-logo" /></Link>
+                <Link to="/" id="nav-name">Everything Cookbook™</Link>
             </div>
             <div id="nav-right">
                 <Link to="/" className={`nav-page-link ${(active === "homepage") ? "nav-active" : "nav-inactive"}`}>Homepage</Link>

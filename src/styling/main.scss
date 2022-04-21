@@ -1,6 +1,6 @@
 /* Variables */
 @import "./variables/colors";
-@import "./variables/numbers";
+@import "./variables/cssVars";
 
 /* Misc */
 @import "./base/normalize";
@@ -14,6 +14,7 @@
 @import "./components/navbar";
 @import "./components/alert";
 @import "./components/recipeCards";
+@import "./components/indRecipe";
 
 /* Pages */
 @import "./pages/empty";

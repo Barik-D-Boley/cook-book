@@ -1,0 +1,18 @@
+#more-recipe-info-container {
+    background-color: $transparent-black-1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 16;
+    display: flex;
+    align-items: center;
+}
+#more-recipe-info {
+    margin: auto;
+    width: 70vw;
+    background-color: $clr-white-2;
+    text-align: center;
+    border-radius: $border-radius-medium;
+}

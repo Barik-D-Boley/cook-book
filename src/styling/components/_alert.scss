@@ -35,7 +35,9 @@
     color: $clr-gray-2;
     font-size: 2rem;
     border-radius: .2rem;
-    transition: color .1s ease;
+    transition: $color-transition;
+    z-index: 17;
+    position: fixed;
     &:hover {
         color: $clr-red-1;
         cursor: pointer;

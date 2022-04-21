@@ -35,13 +35,13 @@ footer {
               font-size: 110%;
               font-weight: bold;
               padding: 0.5rem;
-              padding-left: 0;
             }
             a {
               color: $clr-white-2;
               min-width: 48px;
               min-height: 48px;
               text-decoration: none;
+              transition: $color-transition;
               &:active {
                 color: $clr-orange-1;
               }
@@ -70,6 +70,7 @@ footer {
           margin-inline: 1rem;
           a {
             color: $clr-white-2;
+            transition: $color-transition;
             &:active {
               color: $clr-orange-1;
             }
