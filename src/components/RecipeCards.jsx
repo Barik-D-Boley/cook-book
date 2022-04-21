@@ -50,8 +50,8 @@ function RecipeCards(recipes) {
     }
     return <div id="all-recipes">
         {stuff}
-        {recipeInfo != undefined ? <IndRecipe recipe={recipeInfo} /> : ""}
-        <MdClose className="close-out" style={{ display: `${recipeInfo == undefined ? "none" : "flex"}` }} onClick={() => setRecipeInfo(undefined)} />
+        {recipeInfo !== undefined ? <IndRecipe recipe={recipeInfo} /> : ""}
+        <MdClose className="close-out" style={{ display: `${recipeInfo === undefined ? "none" : "flex"}` }} onClick={() => setRecipeInfo(undefined)} />
     </div>;
 }
 
