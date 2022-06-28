@@ -1,10 +1,8 @@
-/* Variables */
 /* White */
 /* Gray */
 /* Black */
 /* Misc */
 /* Blue */
-/* Misc */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -356,19 +354,12 @@ template {
   display: none;
 }
 
-/* Oswald */
-@font-face {
-  font-family: oswald;
-  src: url("./fonts/Oswald.ttf");
-}
-
 body {
   margin-top: 4rem;
   font-family: oswald;
   background-color: #f1f5f8;
 }
 
-/* Components */
 footer {
   color: #f9f9f9;
   background-color: #2d3436;
@@ -883,7 +874,19 @@ nav {
   border-radius: 0.75rem;
 }
 
-/* Pages */
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #contact-container-div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -963,5 +966,53 @@ nav {
 
 #search {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  font-size: 2rem;
+}
+
+#query {
+  border-radius: 5rem 0 0 5rem;
+  border: 0.15rem #006dfe solid;
+  border-right: none;
+  width: 30rem;
+  padding-left: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#search-btn {
+  border-radius: 0 5rem 5rem 0;
+  border: none;
+  color: #f9f9f9;
+  background-color: #006dfe;
+  padding-left: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#recipe-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+/* Oswald */
+@font-face {
+  font-family: oswald;
+  src: url("./fonts/Oswald.ttf");
 }
 /*# sourceMappingURL=main.css.map */

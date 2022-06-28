@@ -1,24 +1,6 @@
-/* Variables */
-@import "./variables/colors";
-@import "./variables/cssVars";
+@import "./variables/main";
+@import "./base/main";
+@import "./components/main";
+@import "./pages/main";
 
-/* Misc */
-@import "./base/normalize";
 @import "./fonts/fonts";
-@import "./base/allPages";
-
-/* Components */
-@import "./components/errorPage";
-@import "./components/footer";
-@import "./components/loadingPage";
-@import "./components/navbar";
-@import "./components/alert";
-@import "./components/recipeCards";
-@import "./components/indRecipe";
-
-/* Pages */
-@import "./pages/empty";
-@import "./pages/about";
-@import "./pages/contact";
-@import "./pages/homepage";
-@import "./pages/recipes";

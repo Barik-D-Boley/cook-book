@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 /* Components */
 import Welcome from '../components/Welcome';
@@ -32,8 +33,8 @@ function Recipes() {
             <Navbar />
 
             <form id="search" onSubmit={(e) => { setMealValues(e) }}>
-                <input className="input" id="query" name="query" type="text" placeholder="Search" />
-                <input className="input submitBtn" type="submit" value="Submit" />
+                <input className="search-bar" id="query" name="query" type="text" placeholder="Search" />
+                <button className="search-bar" id="search-btn" type="submit"><AiOutlineSearch /></button>
             </form>
             {boolean ? <RecipeCards recipes={recipe} /> : <Welcome />}
 
